@@ -87,23 +87,23 @@ $(function () {
     var scrollDistance = $(window).scrollTop();
     var scrollDistance1 = $("#tokensale-part").offset().top - 100;
     // console.log(scrollDistance+'--'+scrollDistance1)
-    // if (scrollDistance >= scrollDistance1 - 100) {
-    $(".donut").listtopie({
-      // startAngle: 270,
-      strokeWidth: 5,
-      hoverEvent: true,
-      hoverBorderColor: "#a1f88a",
-      hoverAnimate: false,
-      drawType: "round",
-      // speedDraw: 150,
-      hoverColor: "#ffffff",
-      textColor: "#ffffff",
-      strokeColor: "#ffffff",
-      textSize: "18",
-      // hoverAnimate: true,
-      marginCenter: 85,
-    });
-    // }
+    if (scrollDistance >= scrollDistance1 - 100) {
+      $(".donut").listtopie({
+        startAngle: 270,
+        strokeWidth: 5,
+        hoverEvent: true,
+        hoverBorderColor: "#a1f88a",
+        hoverAnimate: false,
+        drawType: "round",
+        speedDraw: 150,
+        hoverColor: "#ffffff",
+        textColor: "#ffffff",
+        strokeColor: "#ffffff",
+        textSize: "18",
+        // hoverAnimate: true,
+        marginCenter: 85,
+      });
+    }
   }
 
   /* menu overlay start */
@@ -143,8 +143,8 @@ $(function () {
 
   $(window).on("resize", function () {
     //location.reload();
-    $(".donut").listtopie("refresh");
-    $("html, body").animate({ scrollTop: "0px" }, 100);
+    // $(".donut").listtopie("refresh");
+    // $("html, body").animate({ scrollTop: "0px" }, 100);
   });
 
   $(".main-box").addClass(function (index) {
