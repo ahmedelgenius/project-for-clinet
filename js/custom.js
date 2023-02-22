@@ -89,7 +89,7 @@ $(function () {
     // console.log(scrollDistance+'--'+scrollDistance1)
     if (scrollDistance >= scrollDistance1 - 100) {
       $(".donut").listtopie({
-        startAngle: 270,
+        // startAngle: 270,
         strokeWidth: 5,
         hoverEvent: true,
         hoverBorderColor: "#a1f88a",
