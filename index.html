@@ -1,0 +1,1389 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	
+	
+	<!-- CONTACT FORM SENDING CODE START-->
+	
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
+<script>
+
+function sendContact() {
+	var valid;	
+	valid = validateContact();
+	if(valid) {
+		jQuery.ajax({
+		url: "contact_mail.php",
+		data:'userName='+$("#userName").val()+'&userEmail='+$("#userEmail").val()+'&subject='+$("#subject").val()+'&content='+$(content).val(),
+		type: "POST",
+		success:function(data){
+			$("#contactForm")[0].reset();  // add function to reset the form data
+		$("#mail-status").html(data);
+		
+
+		},
+		error:function (){
+			$("#contactForm")[0].reset();  // add function to reset the form data
+
+		}
+		});
+	}
+}
+
+function validateContact() {
+	var valid = true;	
+	$(".demoInputBox").css('background-color','');
+	$(".info").html('');
+	
+	if(!$("#userName").val()) {
+		$("#userName-info").html("(required)");
+		$("#userName").css('background-color','#FFFFDF');
+		valid = false;
+	}
+	if(!$("#userEmail").val()) {
+		$("#userEmail-info").html("(required)");
+		$("#userEmail").css('background-color','#FFFFDF');
+		valid = false;
+	}
+	if(!$("#userEmail").val().match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)) {
+		$("#userEmail-info").html("(invalid)");
+		$("#userEmail").css('background-color','#FFFFDF');
+		valid = false;
+	}
+	if(!$("#subject").val()) {
+		$("#subject-info").html("(required)");
+		$("#subject").css('background-color','#FFFFDF');
+		valid = false;
+	}
+	if(!$("#content").val()) {
+		$("#content-info").html("(required)");
+		$("#content").css('background-color','#FFFFDF');
+		valid = false;
+	}
+	
+	return valid;
+
+}
+  
+
+</script>
+
+
+
+
+
+
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VQNYGFZ1KH"></script>
+<script>
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VQNYGFZ1KH');
+</script>
+
+
+
+
+	<!-- Basic Page Needs -->
+    <meta charset="utf-8">
+    <title>SMART GAMES APP</title>
+
+	<!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link type="image/x-icon" href="images/fav-icon.ico" rel="icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/cryptoz.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">   
+    
+	
+	
+	
+    	<!-- ROADMAPS RECTANGLE -->
+		
+		
+		
+		
+		
+<style> 
+
+#rcorners1 {
+  border-radius: 25px;
+  border: 2px solid #2bdecb;
+  background-color: #025663;
+  padding: 20px; 
+  width: 350px;
+  height: 285px;
+  text-align:left; 
+}
+
+#rcorners2 {
+  border-radius: 25px;
+  border: 2px solid #2bdecb;
+  background-color: #025663;
+  padding: 20px; 
+  width: 350px;
+  height: 330px; 
+  text-align:left; 
+}
+
+#rcorners3 {
+  border-radius: 25px;
+  border: 2px solid #2bdecb;
+  background-color: #025663;
+  padding: 20px; 
+  width: 350px;
+  height: 200px;
+  text-align:left;  
+}
+
+#rcorners4 {
+  border-radius: 25px;
+  border: 2px solid #2bdecb;
+  background-color: #025663;
+  padding: 20px; 
+  width: 350px;
+  height: 200px;
+  text-align:left;  
+}
+
+#rcorners5 {
+  border-radius: 25px;
+  border: 2px solid #2bdecb;
+  background-color: #025663;
+  padding: 20px; 
+  width: 350px;
+  height: 195px; 
+  text-align:left; 
+}
+
+ #rcorners6 {
+  border-radius: 25px;
+  border: 2px solid #2bdecb;
+  background-color: #025663;
+  padding: 20px; 
+  width: 350px;
+  height: 160px;
+  text-align:left;  
+}
+#rcorners7 {
+  border-radius: 25px;
+  border: 2px solid #2bdecb;
+  background-color: #025663;
+  padding: 20px; 
+  width: 350px;
+  height: 180px; 
+  text-align:left; 
+}
+#rcorners8 {
+  border-radius: 25px;
+  border: 2px solid #2bdecb;
+  background-color: #025663;
+  padding: 20px; 
+  width: 350px;
+  height: 250px; 
+  text-align:left; 
+}
+#rcorners9 {
+  border-radius: 25px;
+  border: 2px solid #2bdecb;
+  background-color: #025663;
+  padding: 20px; 
+  width: 350px;
+  height: 200px; 
+  text-align:left; 
+}
+#rcorners10 {
+  border-radius: 25px;
+  border: 2px solid #2bdecb;
+  background-color: #025663;
+  padding: 20px; 
+  width: 350px;
+  height: 200px; 
+  text-align:left; 
+}
+#rcorners11 {
+  border-radius: 25px;
+  border: 2px solid #2bdecb;
+  background-color: #025663;
+  padding: 20px; 
+  width: 350px;
+  height: 180px; 
+  text-align:left; 
+}
+
+#rcorners12 {
+  border-radius: 25px;
+  border: 2px solid #2bdecb;
+  background-color: #025663;
+  padding: 20px; 
+  width: 350px;
+  height: 170px; 
+  text-align:left; 
+}
+
+#rcorners13 {
+  border-radius: 25px;
+  border: 2px solid #2bdecb;
+  background-color: #025663;
+  padding: 20px; 
+  width: 350px;
+  height: 170px; 
+  text-align:left; 
+}
+
+#rcorners14 {
+  border-radius: 25px;
+  border: 2px solid #2bdecb;
+  background-color: #025663;
+  padding: 20px; 
+  width: 350px;
+  height: 180px; 
+  text-align:left; 
+}
+
+#rcorners15 {
+  border-radius: 25px;
+  border: 2px solid #2bdecb;
+  background-color: #025663;
+  padding: 20px; 
+  width: 350px;
+  height: 190px; 
+  text-align:left; 
+}
+
+#rcorners16 {
+  border-radius: 25px;
+  border: 2px solid #2bdecb;
+  background-color: #025663;
+  padding: 20px; 
+  width: 350px;
+  height: 115px; 
+  text-align:left; 
+}
+
+
+</style>
+
+ 
+	
+	
+	</head>
+	<body>
+		<!-- Start preloader -->
+		<div id="preloader">
+			<div class="sk-cube-grid">
+				<div class="sk-cube sk-cube1"></div>
+				<div class="sk-cube sk-cube2"></div>
+				<div class="sk-cube sk-cube3"></div>
+				<div class="sk-cube sk-cube4"></div>
+				<div class="sk-cube sk-cube5"></div>
+				<div class="sk-cube sk-cube6"></div>
+				<div class="sk-cube sk-cube7"></div>
+				<div class="sk-cube sk-cube8"></div>
+				<div class="sk-cube sk-cube9"></div>
+			</div>
+		</div>
+		<!-- End preloader -->
+
+		<div class="main">
+			<!-- Header start -->
+			<header id="header">
+				<div class="container">
+					<div class="row m-0">
+						<div class="col-lg-2 col-md-4 col-8 p-0">
+			            	<div class="navbar-header">
+				                <a class="navbar-brand page-scroll" href="index.html">
+				                	<img alt="Smart Games App" src="images/logo.png">
+				                </a> 
+			            	</div>
+				        </div>
+				        <div class="col-lg-10 col-md-8 col-4 p-0">
+				        	<button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle d-block d-lg-none d-xl-none" type="button"><i class="fa fa-bars"></i>
+				        	</button>
+				        	<div class="overlay"></div>
+				        	<div id="menu" class="navbar-collapse collapse" >
+				                <ul class="nav navbar-nav">
+					                <li class="level">
+					                  	<a href="#banner-part" class="page-scroll nav-link" data-scroll>Home</a>
+					                </li>
+					                <li class="level">
+					                  	<a href="#about-part" class="page-scroll nav-link" data-scroll>About</a>
+					                </li><li class="level">
+					                  <a href="#tokensale-part" class="page-scroll nav-link" data-scroll>Token Metrics</a>
+					                </li>
+									<li class="level">
+					                  <a href="getpresale.html" target="_blank">Token Pre-sale</a>
+					                </li>
+					                
+									<li class="level">
+				                		<a href="nft-marketplace.html" target="_blank">Marketplace</a>
+				                	</li>  
+					                <li class="level">
+					                  	<a href="#roadmap-part" class="page-scroll nav-link" data-scroll>Roadmap</a>
+					                </li>
+									<!-- 
+					               <li class="level">
+					                  	<a href="#team-part" class="page-scroll nav-link" data-scroll>Team</a>
+					                </li>
+									--> 
+									           <li class="level">
+				                		<a href="https://smartgamesapp.gitbook.io/" target="_blank">Whitepaper</a>
+				                	</li>  
+									<!--
+                              <li class="level">
+					                  	<a href="#faq-part" class="page-scroll nav-link" data-scroll>Faq</a>
+					                </li>  
+									 -->
+									 
+                        			    <li class="level">
+					                  	<a href="#contact-part" class="page-scroll nav-link" data-scroll>Contact</a>
+					                </li>   
+									
+									
+				                </ul>
+				            </div>
+				        </div>
+					</div>
+				</div>
+			</header>
+			<!-- Header end -->
+
+			
+			
+			 <!-- Banner start -->
+	        <section id="banner-part" class="menu-section main-banner">
+	        	<div class="banner">
+					<div class="banner-detail">
+						<div class="container">
+							<div class="row m-0">
+								<div class="col-lg-6 p-0 fadeInLeft">
+									<div class="banner-detail-inner">
+									
+							<br>
+							<br>
+							
+							<left>
+							
+										<ul>
+					
+
+													
+		    					<a href="https://twitter.com/smartgamesapp/" target="_blank" class="social-network wow bounceInDown" data-wow-delay="0.4s"><i class="fa fa-twitter fa-2x"></i></a>
+		    					&nbsp
+										&nbsp
+										<a href="https://www.instagram.com/appsmartgames/" target="_blank" class="social-network wow bounceInDown" data-wow-delay="1s"><i class="fa fa-instagram fa-2x"></i></a>	
+		    						  &nbsp
+									  &nbsp
+									    <a href="https://t.me/smartgamesapp_official/" target="_blank" class="social-network wow bounceInDown" data-wow-delay="1s"><i class="fa fa-telegram fa-2x"></i></a>	
+	                					 &nbsp
+									  &nbsp
+										<a href="mailto:info@smartgamesapp.io" target="_blank" class="social-network wow bounceInDown" data-wow-delay="1s"><i class="fa fa-envelope fa-2x"></i></a>		
+
+									
+									</ul>
+									
+		    				</left>
+													
+							<br>
+										<h1 class="banner-title"><span>MASWAS GAME</span> <br>NEW INNOVATION</h1>
+										<p>MASWAS game is the latest innovation in fighting games and multi-level combat competitions. The game has two phases, and the winning player gets coins of monetary value that he can sell on the blockchains</p>
+										<a href="play.html" target="_blank" title="smart games" class="btn big-width btn-color">PLAY TO EARN CASH & TOKENS</a>	<a href="prize.html" target="_blank" title="smart games" class="btn big-width btn2-color">WIN</a> 
+ 
+										<h1 class="banner-title">PLAY GAME AND WIN CASH & FREE TOKENS</h1>
+  										<p>Get smart games TOKEN FREE & win cash money if you succeed to complet MASWAS game </p>
+									</div>
+								</div>
+								<div class="col-lg-6 p-0">
+									<div class="banner-main-img">
+										<div class="front-bg fadeInRight">
+											<img src="images/banner-img.png" alt="crypto">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+	        </section>
+	        <!-- Banner end --> 
+
+   
+  
+      			<!-- About section start -->
+			<section id="about-part" class="menu-section about-part position-r ptb-100">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 fadeInRight order-lg-2 order-md-1">
+							<div class="aboutus-detail pb-md-30">
+								<div class="aboutus-detail-inner">
+									<div class="heading-part mb-20 mb-sm-30 mb-xs-20">
+									<br>
+							<br>
+							            <h2 class="main_title">About Smart games App</h2>
+							          	<span>We Translate Your Dream Into Reality</span>
+						        	</div>
+									<p>MASWAS game is a Play-and-earn game ,it is a new business model in which players make alot of money while playing games.
+along with the game , there is a NFT marketplace to allow players to generate extra money, by selling and renting their NFT items like characters and special items they owned.
+</p>
+									<ul>
+										<li> ( MASWAS ) MAS & WAS the new innovation game .</li> 
+										
+										
+										 
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 order-lg-1 order-md-2">
+							<div class="about-img text-right text-md-center fadeInLeft">
+								<img src="images/about-img.png" alt="crypto">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- About section end -->
+
+			<!-- Tokensale section start -->
+      
+   
+			<section id="tokensale-part" class="tokensale-part position-r ptb-100">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 fadeInLeft">
+							<div class="tokensale-detail pb-md-30">
+								<div class="tokensale-detail-inner">
+									<div class="heading-part mb-20 mb-sm-30 mb-xs-20">
+									<br>
+					         		<br>
+							           <h2 class="main_title">Breakdown of our Token Recipients</h2> 
+									           
+ 						        	</div>
+									  <li> Total Supply (Main token): 30,000,000 MASWA.</li> 
+									  <li> NFT ( Non-fungible token )(inside game).</li> 
+									  <li> Game valuable token (inside game).</li> 
+									  <br>
+									  <li>Pre-sale: 17% of total supply .(LOCKED)...(30% token rewards)</li> 
+									  <li>Airdrop: 8% of total supply .(LOCKED)</li> 
+									  <li>Public Sale: 19% of total supply. (Instant unlock)</li>
+									  <li>Team: 16% of total supply .(LOCKED)</li> 
+									  <li>Play to Earn: 20% of total supply .(LOCKED)</li> 
+									  <li>Ecosystem Fund: 20% of total supply. (LOCKED)</li>  
+									  <br>
+						        	 		
+									<ul class="mt-30">
+										 
+										<li><span class="color1"></span>17% Pre-Sale</li>
+										<li><span class="color2"></span>8% Airdrop</li>
+										<li><span class="color3"></span>19% Public Sale</li>
+										<li><span class="color4"></span>16% Team</li>
+										<li><span class="color5"></span>20% Play to Earn</li>
+										<li><span class="color6"></span>20% Ecosystem Fund</li>
+                                    
+										
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 align-right center-md">
+							<div class="token-graph">
+								<div class='donut'>
+						        	 
+						        	<div data-lcolor="#f8c04e">17</div>
+									<div data-lcolor="#ac56f7">8</div>
+						        	<div data-lcolor="#61f89f">19</div> 
+									<div data-lcolor="#5ad6f8">16</div> 
+									<div data-lcolor="#5ad608">20</div> 
+									<div data-lcolor="#c2efa4">20</div> 
+									
+                                    
+						        	
+						        </div>
+					        	<div class="graph-logo">
+					        		<img src="images/graph-logo.png" alt="cryptoz">
+					        	</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Tokensale section end -->
+   
+	
+  
+  
+  
+  	<!-- Roadmap section start -->
+			
+			
+			
+			
+
+			
+			<section id="roadmap-part" class="menu-section roadmap-part position-r ptb-100">
+	        	<div class="container">
+	            	<div class="row">
+	                	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	                    	<div class="heading-part text-center mb-50 mb-sm-30 mb-xs-20">
+	                    		            
+                          <br>
+							<br>
+                          
+	                    		<h2>Roadmap</h2>
+	                    		
+	                    		
+	                    		                    		
+	                    		
+	                    		<span>Q2 / 2023</span>  
+                          
+                          <center>
+	                    		<p id="rcorners1" >
+	                    			
+<br> Team assembling  <img src="images/right.png" alt="completed">
+<br> Website Development  <img src="images/right.png" alt="completed">
+<br> Start Building a community    <img src="images/right.png" alt="completed">
+<br> The initial design for the first phase of the game  <img src="images/right.png" alt="completed">  
+<br> The initial design for the second phase of the game  <img src="images/right.png" alt="completed">
+<br>Concept and Idea - Development  <img src="images/right.png" alt="completed">
+                          
+                           
+	                    		</p>
+	                    		
+	                    		</center>
+	                    		   
+                          
+	                    		<span>Q3 / 2023</span>
+	                    		
+                           <center>
+	                    		<p id="rcorners2">
+	                    		
+<br> Preparing for presale  <img src="images/right.png" alt="completed">                                 
+<br>Business model development   <img src="images/right.png" alt="completed">
+<br>Writing and Editing of Whitepaper    <img src="images/right.png" alt="completed">
+<br>Continue Building a community     <img src="images/right.png" alt="completed">
+<br>Develop Token   <img src="images/right.png" alt="completed">
+<br>Full Audit for Smart Contract     <img src="images/x.png" alt="X">
+<br>Marketing    <img src="images/right.png" alt="completed"> "Going on"
+<br>Pre-sale     <img src="images/x.png" alt="X">
+
+                          	
+	                      </p>
+                          
+                           </center> 
+                           
+                           
+	                    		
+	                    		<span>Q4 / 2023</span>
+	                    		 
+                           <center>
+	                    		<p id="rcorners3">
+  
+<br>Play to Earn Game Development  <img src="images/x.png" alt="X">
+<br>Marketing (Continue)  <img src="images/x.png" alt="X">
+<br>Community Growth  <img src="images/x.png" alt="X">
+<br>Pre-sale (Continue)  <img src="images/x.png" alt="X">
+
+                          
+                          
+	                    		</p> 
+                          
+                           </center>  
+                           
+	                    		
+	                    		<span>Q1 / 2024</span>
+	                    		
+                           <center>
+	                    		<p id="rcorners4">
+<br>Public sale Start Listing  <img src="images/x.png" alt="X">
+<br>Marketing (Continue)  <img src="images/x.png" alt="X">
+<br>Community Growth  <img src="images/x.png" alt="X">
+<br>Play to Earn Game Development  <img src="images/x.png" alt="X">
+	                    		
+                           </center>
+                           
+	                    		<span>Q2 / 2024</span>
+	                    		 
+                           <center>
+	                    		<p id="rcorners5">
+	                        
+	                    	   <br>Listing in another platform (2)  .<img src="images/x.png" alt="X">
+<br>Marketing (Continue)  <img src="images/x.png" alt="X">
+<br>Community Growth  <img src="images/x.png" alt="X">
+<br>Play to Earn Game Development  <img src="images/x.png" alt="X">
+
+	                    		</p>
+                          
+                           </center>
+                             
+                          
+                          <span>Q3 / 2024</span>
+	                    		
+                           <center>
+	                    		<p id="rcorners6">
+	                        	
+<br>Marketing (Continue)  <img src="images/x.png" alt="X">
+<br>Community Growth  <img src="images/x.png" alt="X">
+<br>Play to Earn Game Development  <img src="images/x.png" alt="X">
+
+	                            
+	                    		</p>
+                           
+                           </center>
+                                              
+                          
+                          <span>Q4 / 2024</span>
+	                    		 
+                           <center>
+	                    		<p id="rcorners7">
+<br>Marketing (Continue)  <img src="images/x.png" alt="X">
+<br>Community Growth  <img src="images/x.png" alt="X">
+<br>Play to Earn Game Development  <img src="images/x.png" alt="X">
+
+                          
+                          
+                          
+	                    		</p>
+                          
+                           </center>
+                           
+                           
+						   <span>Q1 / 2025</span>
+	                    		 
+                           <center>
+	                    		<p id="rcorners8">
+								 
+<br>Game Beta release  <img src="images/x.png" alt="X">
+<br>Play to earn (NEW INOVATION) (P2E)  <img src="images/x.png" alt="X">
+<br>Play to Earn Game Development  <img src="images/x.png" alt="X">
+<br>Marketing (Continue)  <img src="images/x.png" alt="X">
+<br>Community Growth  <img src="images/x.png" alt="X">
+<br>Listing in another platform (3)  <img src="images/x.png" alt="X">
+                          
+                          
+                          
+	                    		</p>
+                          
+                           </center>                      
+                            
+							 <span>Q2 / 2025</span>
+	                    		 
+                           <center>
+	                    		<p id="rcorners9">
+								
+<br>Play to Earn Game Development  <img src="images/x.png" alt="X">
+<br>Marketing (Continue)  <img src="images/x.png" alt="X">
+<br>Community Growth  <img src="images/x.png" alt="X">
+<br>Listing in another platform (4)  <img src="images/x.png" alt="X">
+                          
+                          
+                          
+	                    		</p>
+                          
+                           </center>                                           
+                                 
+								  <span>Q3 / 2025</span>
+	                    		 
+                           <center>
+	                    		<p id="rcorners10">
+<br>Releasing final version of the Game  <img src="images/x.png" alt="X">
+<br>Play to Earn Game Development  <img src="images/x.png" alt="X">
+<br>Marketing (Continue)  <img src="images/x.png" alt="X">
+<br>Community Growth  <img src="images/x.png" alt="X">
+<br>Listing in another platform (5)  <img src="images/x.png" alt="X">
+
+                          
+                          
+                          
+	                    		</p>
+                          
+                           </center>              
+						       
+							<span>Q4 / 2025</span>
+	                    		 
+                           <center>
+	                    		<p id="rcorners11">
+	                       
+<br>Play to Earn Game Development  <img src="images/x.png" alt="X">
+<br>Marketing (Continue)  <img src="images/x.png" alt="X">
+<br>Community Growth  <img src="images/x.png" alt="X">
+<br>Listing in another platform (6)  <img src="images/x.png" alt="X">
+                          
+                       
+	                    		</p>
+                          
+                           </center>         
+						   
+						  <span>Q1 / 2026</span>
+	                    		 
+                           <center>
+	                    		<p id="rcorners12">
+	                       
+<br>Play to Earn Game Development (Continue)  <img src="images/x.png" alt="X">
+<br>Marketing (Continue)  <img src="images/x.png" alt="X">
+<br>Community Growth  <img src="images/x.png" alt="X">
+                                                    
+                          
+	                    		</p>
+                          
+                           </center>         
+						   <span>Q2 / 2026</span>
+	                    		 
+                           <center>
+	                    		<p id="rcorners13">
+	                       
+<br>Play to Earn Game Development (Continue)  <img src="images/x.png" alt="X">
+<br>Marketing (Continue)  <img src="images/x.png" alt="X">
+<br>Community Growth  <img src="images/x.png" alt="X">
+                                                  
+                          
+	                    		</p>
+                          
+                           </center>         
+						   
+						   <span>Q3-Q4 / 2026</span>
+	                    		 
+                           <center>
+	                    		<p id="rcorners14">
+	                       
+<br>Concept and Idea - Development begins of 3rd Phase  <img src="images/x.png" alt="X">
+<br>Marketing (Continue)  <img src="images/x.png" alt="X">
+<br>Community Growth  <img src="images/x.png" alt="X">
+                                                   
+                          
+	                    		</p>
+                          
+                           </center>         
+						   
+    
+						   
+						   <span>Q1 / 2027</span>
+	                    		 
+                           <center>
+	                    		<p id="rcorners16">
+	                       
+<br>Sidechain development  <img src="images/x.png" alt="X">
+                                                   
+                          
+	                    		</p>
+                          
+                           </center>             
+						   	
+	                        </div>
+	                    </div>
+	                </div>
+                	
+	        	</div>  
+		                               
+	        </section>
+			
+	        <!-- Roadmap section end -->
+          
+
+			<!-- Our Team section strat -->
+			<!--
+			<section id="team-part" class="menu-section team-part position-r ptb-100">
+				<div class="container">
+					<div class="row">
+	                	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	                    	<div class="heading-part text-center mb-50 mb-sm-30 mb-xs-20">
+	                        	<h2 class="main_title">Executive Team</h2>
+	                            <span>Emergence and design of the idea</span>
+	                        </div>
+	                    </div>
+	                </div>
+			    	<div class="mb_-30">
+				    	<div class="row">
+				    		<div class="col-sm-6 col-lg-3 fadeInUpMedium delay1">
+				    			<div class="team-box mb-30">
+				    				<div class="team-thumb">
+				    					<img src="images/member1.jpg" alt="Cryptoz">
+				    				</div>
+				    				<div class="team-detail">
+				    					<h3 class="member-name">John Doe</h3>
+				    					<span class="member-designation">CEO & Lead Blockchain</span>
+				    					<div class="social-media">
+				    						<ul>
+				    							<li><a href="javascript:void(0)"><i class="fa fa-facebook"></i></a></li>
+				    							<li><a href="javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
+				    							<li><a href="javascript:void(0)"><i class="fa fa-linkedin"></i></a></li>
+				    							<li><a href="javascript:void(0)"><i class="fa fa-rss"></i></a></li>
+				    						</ul>
+				    					</div>
+				    				</div>
+				    			</div>
+				    		</div>
+				    		<div class="col-sm-6 col-lg-3 fadeInUpMedium delay2">
+				    			<div class="team-box mb-30">
+				    				<div class="team-thumb">
+				    					<img src="images/member2.jpg" alt="Cryptoz">
+				    				</div>
+				    				<div class="team-detail">
+				    					<h3 class="member-name">John Doe</h3>
+				    					<span class="member-designation">Marketing Head</span>
+				    					<div class="social-media">
+				    						<ul>
+				    							<li><a href="javascript:void(0)"><i class="fa fa-facebook"></i></a></li>
+				    							<li><a href="javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
+				    							<li><a href="javascript:void(0)"><i class="fa fa-linkedin"></i></a></li>
+				    							<li><a href="javascript:void(0)"><i class="fa fa-rss"></i></a></li>
+				    						</ul>
+				    					</div>
+				    				</div>
+				    			</div>
+				    		</div>
+				    		<div class="col-sm-6 col-lg-3 fadeInUpMedium delay3">
+				    			<div class="team-box mb-30">
+				    				<div class="team-thumb">
+				    					<img src="images/member3.jpg" alt="Cryptoz">
+				    				</div>
+				    				<div class="team-detail">
+				    					<h3 class="member-name">John Doe</h3>
+				    					<span class="member-designation">HR Head</span>
+				    					<div class="social-media">
+				    						<ul>
+				    							<li><a href="javascript:void(0)"><i class="fa fa-facebook"></i></a></li>
+				    							<li><a href="javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
+				    							<li><a href="javascript:void(0)"><i class="fa fa-linkedin"></i></a></li>
+				    							<li><a href="javascript:void(0)"><i class="fa fa-rss"></i></a></li>
+				    						</ul>
+				    					</div>
+				    				</div>
+				    			</div>
+				    		</div>
+				    		<div class="col-sm-6 col-lg-3 fadeInUpMedium delay4">
+				    			<div class="team-box mb-30">
+				    				<div class="team-thumb">
+				    					<img src="images/member4.jpg" alt="Cryptoz">
+				    				</div>
+				    				<div class="team-detail">
+				    					<h3 class="member-name">John Doe</h3>
+				    					<span class="member-designation">Lead Designer</span>
+				    					<div class="social-media">
+				    						<ul>
+				    							<li><a href="javascript:void(0)"><i class="fa fa-facebook"></i></a></li>
+				    							<li><a href="javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
+				    							<li><a href="javascript:void(0)"><i class="fa fa-linkedin"></i></a></li>
+				    							<li><a href="javascript:void(0)"><i class="fa fa-rss"></i></a></li>
+				    						</ul>
+				    					</div>
+				    				</div>
+				    			</div>
+				    		</div>
+				    	</div>
+				    </div>
+				</div>
+			</section>
+			-->
+		
+			<!-- Our Team section end -->
+
+			<!-- FAQ section strat -->
+			<!--  
+						
+			<section id="faq-part" class="menu-section faq-part position-r ptb-100">
+				<div class="container">
+					<div class="row">
+	                	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	                    	<div class="heading-part text-center mb-50 mb-sm-30 mb-xs-20">
+	                        	<h2 class="main_title">FAQS</h2>
+	                            <span>Frequently asked questions</span>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="row justify-content-center">
+	                	<div class="col-md-10">
+	                		 <div id="tabs">
+		                    	<ul class="nav nav-tabs">
+			                        <li><a class="tab-General selected" title="General">General Questions</a></li>
+			                        <li><a class="tab-ICO" title="ICO">ICO Questions</a></li>
+			                        <li><a class="tab-Token-sale" title="Token-sale">Token sale</a></li>
+			                        <li><a class="tab-Investors" title="Investors">Investors</a></li>
+		                    	</ul>
+		                    </div>
+		                    <div id="items">
+			                    <div class="tab_content">
+			                        <ul>
+			                        	<li>
+			                            	<div class="items-General selected">
+			                            		<div id="accordion" class="accordion">
+			                            			<div class="accordion-box fadeInUpMedium delay1">
+														<h3>
+															<a href="" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+																What is the Maswas game project?
+															</a>
+														</h3>
+														<div id="collapseOne" class="collapse show" data-parent="#accordion">
+															<p>
+Maswas Game project is a hybrid game that combines the Play-to-Earn and Free-to-Play models.
+It consists of NFT game and NFT marketplace.
+
+
+															</p>
+														</div>
+													</div>
+													<div class="accordion-box fadeInUpMedium delay2">
+														<h3>
+															<a href="" class="collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+															What are the differences between the two models?
+															</a>
+														</h3>
+														<div id="collapseTwo" class="collapse" data-parent="#accordion">
+															<p>
+
+<p>A.	Free to play</p>
+<p>-	Free hero's character at A1 level only and can't be upgraded. It's not NFT item.</p>
+<p>-	No valued token rewards. </p>
+<p>-	Player's name will not be eligible to enter the BIG money prize draw.</p>
+&nbsp
+<p>B.	Play to earn (invest to play)</p>
+<p>-	NFT hero's character.</p>
+<p>-	NFT VIP weapons</p>
+<p>-	Exclusive rewards: NFT items (can be used in fighting, can be rented to other players and can be sold also), main project token , game tokens currency and big cash money prizes and more.</p>
+
+
+
+
+															</p>
+														</div>
+													</div>
+													<div class="accordion-box fadeInUpMedium delay3">
+														<h3>
+															<a href="" class="collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+																When the Maswas game will be ready?
+															</a>
+														</h3>
+														<div id="collapseThree" class="collapse" data-parent="#accordion">
+															<p>
+We are doing our best to complete the projet soon	</p>
+														</div>
+													</div>
+													
+									
+													
+													
+												<div class="accordion-box fadeInUpMedium delay3">
+														<h3>
+															<a href="" class="collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+																Which blockchains does Maswas support?
+															</a>
+														</h3>
+														<div id="collapseFour" class="collapse" data-parent="#accordion">
+															<p>
+ Binance smart chain (BNB Chain)</p>
+														</div>
+													</div>	
+													
+													
+													
+													<div class="accordion-box fadeInUpMedium delay3">
+														<h3>
+															<a href="" class="collapsed" data-toggle="collapse" data-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+																What benefits or functions does holding Maswas Token provide?
+															</a>
+														</h3>
+														<div id="collapsefive" class="collapse" data-parent="#accordion">
+															<p>
+$MASWA Token allows its holder to be part of our ecosystem. The token is used for Governance Voting.</p>
+														</div>
+													</div>	
+													
+													
+													
+													<div class="accordion-box fadeInUpMedium delay3">
+														<h3>
+															<a href="" class="collapsed" data-toggle="collapse" data-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
+																Where can I buy Maswas tokens?
+
+															</a>
+														</h3>
+														<div id="collapsesix" class="collapse" data-parent="#accordion">
+															<p>
+at present You can buy $MASWA from the following: Pancakeswap and more will be added soon.</p>
+														</div>
+													</div>	
+													
+													
+													
+													<div class="accordion-box fadeInUpMedium delay3">
+														<h3>
+															<a href="" class="collapsed" data-toggle="collapse" data-target="#collapseseven" aria-expanded="false" aria-controls="collapseseven">
+																Does Maswas audit its smart contracts?
+
+															</a>
+														</h3>
+														<div id="collapseseven" class="collapse" data-parent="#accordion">
+															<p>
+Yes, Maswas audits its smart contracts . More information about the audit can be found here.</p>
+														</div>
+													</div>	
+													
+													
+													
+													
+												</div>
+			                            	</div>
+			                            </li>
+			                            <li>
+			                            	<div class="items-ICO">
+			                            		<div id="accordion-copy" class="accordion">
+													<div class="accordion-box">
+														<h3>
+															<a href="" class="collapsed" data-parent="#accordion-copy" data-toggle="collapse" data-target="#collapseTwo-copy" aria-expanded="false" aria-controls="collapseTwo-copy">
+																How Cryptoz different from other ICO
+															</a>
+														</h3>
+														<div id="collapseTwo-copy" class="collapse show" data-parent="#accordion-copy">
+															<p>
+															Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.Sed ut perspiciatis unde omnis iste perspiciatis eaque ipsa quae
+															</p>
+														</div>
+													</div>
+													<div class="accordion-box">
+														<h3>
+															<a href="" class="collapsed" data-parent="#accordion-copy" data-toggle="collapse" data-target="#collapseThree-copy" aria-expanded="false" aria-controls="collapseThree-copy">
+																What is Cryptoz Smart Contract
+															</a>
+														</h3>
+														<div id="collapseThree-copy" class="collapse" data-parent="#accordion-copy">
+															<p>
+															Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.Sed ut perspiciatis unde omnis iste perspiciatis eaque ipsa quae
+															</p>
+														</div>
+													</div>
+													<div class="accordion-box">
+														<h3>
+															<a href="" class="collapsed" data-parent="#accordion-copy" data-toggle="collapse" data-target="#collapsefour-copy" aria-expanded="false" aria-controls="collapsefour-copy">
+																What is Cryptoz business model?
+															</a>
+														</h3>
+														<div id="collapsefour-copy" class="collapse" data-parent="#accordion-copy">
+															<p>
+															Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.Sed ut perspiciatis unde omnis iste perspiciatis eaque ipsa quae
+															</p>
+														</div>
+													</div>
+													<div class="accordion-box">
+														<h3>
+															<a href="" data-parent="#accordion-copy" data-toggle="collapse" data-target="#collapseOne-copy" aria-expanded="true" aria-controls="collapseOne-copy">
+																What cryptocurrencies can I use to purchase?
+															</a>
+														</h3>
+														<div id="collapseOne-copy" class="collapse" data-parent="#accordion-copy">
+															<p>
+															Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.Sed ut perspiciatis unde omnis iste perspiciatis eaque ipsa quae
+															</p>
+														</div>
+													</div>
+												</div>
+			                            	</div>
+			                            </li>
+			                            <li>
+			                            	<div class="items-Token-sale">
+			                            		<div id="accordion-ico" class="accordion">
+													<div class="accordion-box">
+														<h3>
+															<a href="" class="collapsed" data-parent="#accordion-ico" data-toggle="collapse" data-target="#collapseThree-ico" aria-expanded="false" aria-controls="collapseThree-ico">
+																What is Cryptoz Smart Contract
+															</a>
+														</h3>
+														<div id="collapseThree-ico" class="collapse show" data-parent="#accordion-ico">
+															<p>
+															Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.Sed ut perspiciatis unde omnis iste perspiciatis eaque ipsa quae
+															</p>
+														</div>
+													</div>
+													<div class="accordion-box">
+														<h3>
+															<a href="" class="collapsed" data-parent="#accordion-ico" data-toggle="collapse" data-target="#collapsefour-ico" aria-expanded="false" aria-controls="collapsefour-ico">
+																What is Cryptoz business model?
+															</a>
+														</h3>
+														<div id="collapsefour-ico" class="collapse" data-parent="#accordion-ico">
+															<p>
+															Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.Sed ut perspiciatis unde omnis iste perspiciatis eaque ipsa quae
+															</p>
+														</div>
+													</div>
+													<div class="accordion-box">
+														<h3>
+															<a href="" data-parent="#accordion-ico" data-toggle="collapse" data-target="#collapseOne-ico" aria-expanded="true" aria-controls="collapseOne-ico">
+																What cryptocurrencies can I use to purchase?
+															</a>
+														</h3>
+														<div id="collapseOne-ico" class="collapse" data-parent="#accordion-ico">
+															<p>
+															Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.Sed ut perspiciatis unde omnis iste perspiciatis eaque ipsa quae
+															</p>
+														</div>
+													</div>
+													<div class="accordion-box">
+														<h3>
+															<a href="" class="collapsed" data-parent="#accordion-ico" data-toggle="collapse" data-target="#collapseTwo-ico" aria-expanded="false" aria-controls="collapseTwo-ico">
+																How Cryptoz different from other ICO
+															</a>
+														</h3>
+														<div id="collapseTwo-ico" class="collapse" data-parent="#accordion-ico">
+															<p>
+															Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.Sed ut perspiciatis unde omnis iste perspiciatis eaque ipsa quae
+															</p>
+														</div>
+													</div>
+												</div>
+			                            	</div>
+			                            </li>
+			                            <li>
+			                            	<div class="items-Investors">
+			                            		<div id="accordion-investors" class="accordion">
+													<div class="accordion-box">
+														<h3>
+															<a href="" class="collapsed" data-parent="#accordion-investors" data-toggle="collapse" data-target="#collapsefour-investors" aria-expanded="false" aria-controls="collapsefour-investors">
+																What is Cryptoz business model?
+															</a>
+														</h3>
+														<div id="collapsefour-investors" class="collapse show" data-parent="#accordion-investors">
+															<p>
+															Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.Sed ut perspiciatis unde omnis iste perspiciatis eaque ipsa quae
+															</p>
+														</div>
+													</div>
+													<div class="accordion-box">
+														<h3>
+															<a href="" data-parent="#accordion-investors" data-toggle="collapse" data-target="#collapseOne-investors" aria-expanded="true" aria-controls="collapseOne-investors">
+																What cryptocurrencies can I use to purchase?
+															</a>
+														</h3>
+														<div id="collapseOne-investors" class="collapse" data-parent="#accordion-investors">
+															<p>
+															Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.Sed ut perspiciatis unde omnis iste perspiciatis eaque ipsa quae
+															</p>
+														</div>
+													</div>
+													<div class="accordion-box">
+														<h3>
+															<a href="" class="collapsed" data-parent="#accordion-investors" data-toggle="collapse" data-target="#collapseTwo-investors" aria-expanded="false" aria-controls="collapseTwo-investors">
+																How Cryptoz different from other ICO
+															</a>
+														</h3>
+														<div id="collapseTwo-investors" class="collapse" data-parent="#accordion-investors">
+															<p>
+															Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.Sed ut perspiciatis unde omnis iste perspiciatis eaque ipsa quae
+															</p>
+														</div>
+													</div>
+													<div class="accordion-box">
+														<h3>
+															<a href="" class="collapsed" data-parent="#accordion-investors" data-toggle="collapse" data-target="#collapseThree-investors" aria-expanded="false" aria-controls="collapseThree-investors">
+																What is Cryptoz Smart Contract
+															</a>
+														</h3>
+														<div id="collapseThree-investors" class="collapse" data-parent="#accordion-investors">
+															<p>
+															Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.Sed ut perspiciatis unde omnis iste perspiciatis eaque ipsa quae
+															</p>
+														</div>
+													</div>
+												</div>
+			                            	</div>
+			                            </li>
+			                        </ul>
+			                    </div>
+		                	</div>
+	                	</div>
+	                </div>
+				</div>
+			</section>
+		
+			
+			<!-- FAQ section end -->
+
+		
+			
+			<!-- Contact section start -->
+			
+			 
+			
+			<section id="contact-part" class="menu-section contact-part position-r ptb-100">
+				<div class="container">
+					<div class="row">
+	                	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	                    	<div class="heading-part text-center mb-50 mb-sm-30 mb-xs-20">
+							<br>
+							<br>
+							
+	                        	<h2 class="main_title">Get In Touch</h2>
+	                            
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="row">
+	                	<div class="col-md-4">
+	                		<div class="contact-box">
+							
+							<li>
+	                					
+	                					
+	                				</li>
+									
+	                			<ul>
+									<li>
+	                					<div class="contact-thumb">
+	                					<a href="https://www.twitter.com/smartgamesapp" target="_blank" class="social-network wow bounceInDown" data-wow-delay="0.4s"><i class="fa fa-twitter fa-4x"></i></a><br>
+	                					</div>
+										
+	                					<div class="contact-box-detail">
+	                						<h3 class="contact-title">Call Us On</h3>
+	                						<p>Twitter</p>
+	                					</div>
+	                				</li>
+									
+										<li>
+	                					<div class="contact-thumb">
+		    							<a href="https://www.instagram.com/appsmartgames/" target="_blank" class="social-network wow bounceInDown" data-wow-delay="1s"><i class="fa fa-instagram fa-4x"></i></a>		
+	                					</div>
+	                					<div class="contact-box-detail">
+	                						<h3 class="contact-title">Call Us On</h3>
+	                						<p>Instagram</p>
+	                					</div>
+	                				</li>
+									
+	                				<li>
+									<div class="contact-thumb">
+	                					<a href="mailto:info@smartgamesapp.io" target="_blank" class="social-network wow bounceInDown" data-wow-delay="1s"><i class="fa fa-envelope fa-4x"></i></a>		
+
+	                					</div>
+	                					<div class="contact-box-detail">
+	                						<h3 class="contact-title">Contact us</h3>
+	                						<p>By Email</p>
+									
+											
+									
+	                					
+	                					</div>
+	                				</li>
+	                				<li>
+	                					
+										<div class="contact-thumb">
+		    							<a href="https://t.me/smartgamesapp_official/" target="_blank" class="social-network wow bounceInDown" data-wow-delay="1s"><i class="fa fa-telegram fa-4x"></i></a>		
+	                					</div>
+	                					<div class="contact-box-detail">
+	                						<h3 class="contact-title">Join Us On</h3>
+	                						<p>Telgram</p>
+										
+										
+										
+										
+	                					</div>
+	                				</li>
+	                			
+	                				
+	                	
+	                			</ul>
+	                		</div>
+	                	</div>
+						
+						<!-- Contact form -->
+							
+						<form id="contactForm">	
+						
+						<div id="frmContact">
+<div id="mail-status"></div>
+<div>
+<label style="padding-top:20px;">Name</label>
+<span id="userName-info" class="info"></span><br/>
+<input type="text" name="userName" id="userName" class="demoInputBox">
+</div>
+<div>
+<label>Email</label>
+<span id="userEmail-info" class="info"></span><br/>
+<input type="text" name="userEmail" id="userEmail" class="demoInputBox">
+</div>
+<div>
+<label>Subject</label> 
+<span id="subject-info" class="info"></span><br/>
+<input type="text" name="subject" id="subject" class="demoInputBox">
+</div>
+<div>
+<label>Content</label> 
+<span id="content-info" class="info"></span><br/>
+<textarea name="content" id="content" class="demoInputBox" cols="60" rows="6"></textarea>
+</div>
+<div>
+<button type="button" style="background-color:white;border:hidden;" class="btnAction" onClick="sendContact();">Send</button>
+
+</form>
+	             			
+</div>
+</div>
+						
+					
+						
+				
+									
+			</section>
+			
+			 
+			
+			<!-- Contact section end -->
+
+<!-- Footer section start -->
+			<footer>
+				<div class="container">
+					<div class="footer-bottom">
+						<div class="row">
+							<div class="col-md-8">
+							
+								<p class="mb-0">© SMART CRYPTO GAMES all Rights Reserved <a href="https://www.smartgamesapp.io/" target="_blank" title="smart games">SMART CRYPTO GAMES</a></p>
+							 
+							
+							</div>
+							<div class="col-md-4">
+								<div class="social-media">
+		    						
+		    					</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- Footer section end -->
+		</div>
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/viewportchecker.js"></script>
+		<script src="js/snap.svg-min.js"></script>
+		<script src="js/jquery.listtopie.min.js"></script>
+		<script src="js/custom.js"></script>
+		<script>
+			$(function() {
+				setTimeout (function(){
+		        	jQuery('.fadeInUp,.fadeInRight,.slideInRight,.fadeInLeft,.fadeInLeftBig,.fadeInDown,.zoomIn,.fadeInDownBig,.fadeInUpBig,.fadeInUpMedium').addClass("invisible").
+		        	viewportChecker({
+		          	classToAdd: 'visible animated',
+		          	offset: 50
+		       		});
+		      	},500);            
+			})
+		</script>
+
+		<script>
+		    $(window).on('scroll', function(){
+				var scrollDistance = $(window).scrollTop() +96;
+			
+				// Assign active class to nav links while scolling
+				$('.menu-section').each(function(i) {
+					if ($(this).position().top <= scrollDistance) {
+						$('.navbar-nav a.page-scroll.active').removeClass('active');
+						$('.navbar-nav a.page-scroll').eq(i).addClass('active');
+					}
+				});
+			}).scroll();
+		</script>
+	</body>
+
+</html>
