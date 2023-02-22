@@ -95,7 +95,7 @@ $(function () {
         hoverBorderColor: "#a1f88a",
         hoverAnimate: false,
         drawType: "round",
-        speedDraw: 150,
+        // speedDraw: 150,
         hoverColor: "#ffffff",
         textColor: "#ffffff",
         strokeColor: "#ffffff",
