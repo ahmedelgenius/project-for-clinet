@@ -141,11 +141,11 @@ $(function () {
     tokan_graph();
   });
 
-  $(window).on("resize", function () {
-    //location.reload();
-    // $(".donut").listtopie("refresh");
-    // $("html, body").animate({ scrollTop: "0px" }, 100);
-  });
+  //   $(window).on("resize", function () {
+  //location.reload();
+  // $(".donut").listtopie("refresh");
+  // $("html, body").animate({ scrollTop: "0px" }, 100);
+  //   });
 
   $(".main-box").addClass(function (index) {
     if ((index + 1) % 2 == 0) {
