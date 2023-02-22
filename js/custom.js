@@ -93,14 +93,14 @@ $(function () {
         strokeWidth: 5,
         hoverEvent: true,
         hoverBorderColor: "#a1f88a",
-        // hoverAnimate:false,
+        hoverAnimate: false,
         drawType: "round",
         speedDraw: 150,
         hoverColor: "#ffffff",
         textColor: "#ffffff",
         strokeColor: "#ffffff",
         textSize: "18",
-        hoverAnimate: true,
+        // hoverAnimate: true,
         marginCenter: 85,
       });
     }
